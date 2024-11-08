@@ -1,0 +1,36 @@
+<div class="container">
+    <h2 class="title">Student Management</h2>
+  
+    <!-- Add Student Form -->
+    <div *ngIf="!editingStudent" class="form-container">
+      <h3>Add New Student</h3>
+      <div class="input-group">
+        <input [(ngModel)]="newStudent.name" placeholder="First Name" class="input-field" />
+        <input [(ngModel)]="newStudent.lastName" placeholder="Last Name" class="input-field" />
+      </div>
+      <button (click)="addStudent()" class="button add-button">Add Student</button>
+    </div>
+  
+    <!-- Edit Student Form -->
+    <div *ngIf="editingStudent" class="form-container">
+      <h3>Edit Student</h3>
+      <div class="input-group">
+        <input [(ngModel)]="studentName" placeholder="First Name" class="input-field" />
+        <input [(ngModel)]="studentLastName" placeholder="Last Name" class="input-field" />
+      </div>
+      <button (click)="saveStudent()" class="button save-button">Save</button>
+    </div>
+  
+    <!-- Student List -->
+    <h3 class="list-title">Students List</h3>
+    <ul class="student-list">
+      <li *ngFor="let student of students; let i = index" class="student-item">
+        <span>{{ student.name }} {{ student.lastName }}</span>
+        <div class="button-group">
+          <button (click)="editStudent(i)" class="button edit-button">Edit</button>
+          <button (click)="deleteStudent(i)" class="button delete-button">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

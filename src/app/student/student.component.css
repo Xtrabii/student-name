@@ -1,0 +1,125 @@
+/* General Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .title, .list-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Container */
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    width: 100%;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .save-button {
+    background-color: #2196F3;
+    width: 100%;
+  }
+  
+  .save-button:hover {
+    background-color: #1e88e5;
+  }
+  
+  .edit-button {
+    background-color: #FFC107;
+    margin-right: 10px;
+  }
+  
+  .edit-button:hover {
+    background-color: #ffb300;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .delete-button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Student List */
+  .student-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+  }
+  
+  .button-group button {
+    margin-left: 5px;
+  }
+  
